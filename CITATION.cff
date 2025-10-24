@@ -1,0 +1,6 @@
+@misc{alam2025pqcguard,
+  author = {Muhammad Masoom Alam and Abdul Rafay},
+  title = {PQC-Guard: Fine-Tuning Phi-2 for Post-Quantum Cryptography Readiness},
+  year = {2025},
+  url = {https://github.com/abdulrafayishaCkER/pqc-guard}
+}
