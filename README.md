@@ -41,23 +41,23 @@ This model provides enhanced reasoning across PQC domains and is suitable for re
 Clone the repository, create a virtual environment, and install dependencies:
 
 
-git clone https://github.com/abdulrafayishaCkER/pqc-guard
-cd pqc-guard
+- git clone https://github.com/abdulrafayishaCkER/pqc-guard
+- cd pqc-guard
 
-python3 -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+- python3 -m venv .venv
+- source .venv/bin/activate        # Windows: .venv\Scripts\activate
 
-pip install --upgrade pip
-pip install -r requirements.txt
+- pip install --upgrade pip
+- pip install -r requirements.txt
 
 # Download LoRA Adapters
 
 Choose one method:
 
 A) Clone from Hugging Face (Recommended)
-git lfs install
-git clone https://huggingface.co/abdulrafayishaCked/pqc_guard
-mv pqc_guard ./adapters
+- git lfs install
+- git clone https://huggingface.co/abdulrafayishaCked/pqc_guard
+- mv pqc_guard ./adapters
 
 B) Programmatic Download using Python
 from huggingface_hub import snapshot_download
@@ -92,4 +92,5 @@ local_dir = snapshot_download(
 - Prefer running on GPU (T4 Tesla)
 
 - Ideal for PQC research, model comparison, and hybrid PQ-TLS design testing
+
 
