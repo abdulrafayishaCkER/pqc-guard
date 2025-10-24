@@ -89,6 +89,7 @@ local_dir = snapshot_download(
 
 - Use the LoRA adapter version for best compatibility
 
-- Prefer running on GPU (T4, L4, A10G, or better)
+- Prefer running on GPU (T4 Tesla)
 
 - Ideal for PQC research, model comparison, and hybrid PQ-TLS design testing
+
