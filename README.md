@@ -1,4 +1,4 @@
-# pqc_fine_tuned_model
+# pqc_guard
 
 A fine-tuned [Phi-2](https://huggingface.co/microsoft/phi-2) model based on **Post-Quantum Cryptography (PQC)** knowledge base areas.  
 This model covers in-depth domains of **post-quantum cryptography** and various PQC scenarios.
@@ -17,3 +17,4 @@ This model covers in-depth domains of **post-quantum cryptography** and various 
 - Intended for research & experimentation in **post-quantum cryptography reasoning**
 
 ---
+
