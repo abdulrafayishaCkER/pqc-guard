@@ -1,72 +1,25 @@
-PQC-Guard — Licensing Summary
-=============================
+MIT License
 
-This repository contains three kinds of artifacts: (A) code and scripts, (B) dataset(s) and data artifacts,
-and (C) large model adapter binaries (checkpoints). The following short, clear license rules apply.
+Copyright (c) 2025 
+Abdul Rafay (Primary Author, Research Intern)
+Under the supervision of:
+Dr. Muhammad Masoom Alam (Advisor)
 
-1) Code and scripts (recommended primary license): MIT License
-----------------------------------------------------------------
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following condition:
+of this software, associated documentation files, and model artifacts
+(the "Software"), to deal in the Software without restriction, including 
+without limitation the rights to use, copy, modify, merge, publish, 
+distribute, sublicense, and/or sell copies of the Software, and to 
+permit persons to whom the Software is furnished to do so, subject to 
+the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be 
+included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY.
-
-SPDX-License-Identifier: MIT
-Copyright (c) 2025 Abdul Rafay
-
-2) Dataset and data artifacts: Creative Commons Attribution 4.0 (CC BY 4.0)
----------------------------------------------------------------------------
-The dataset files included in `data/` (e.g., `dataset.jsonl`, `prompts_eval.csv`, generator scripts)
-are licensed under the Creative Commons Attribution 4.0 International License.
-
-You are free to:
-  • Share — copy and redistribute the material in any medium or format
-  • Adapt — remix, transform, and build upon the material for any purpose, even commercially
-
-Under the following terms:
-  • Attribution — You must give appropriate credit, provide a link to the license,
-    and indicate if changes were made. You may do so in any reasonable manner, but not in any way
-    that suggests the licensor endorses you or your use.
-
-Full license text: https://creativecommons.org/licenses/by/4.0/
-Recommended short notice to include when reusing: "Dataset © 2025 Abdul Rafay — licensed under CC BY 4.0."
-
-3) Model weights, adapter binaries, and large artifacts
--------------------------------------------------------
-Model binaries (adapters / checkpoints) are large binary artifacts and may carry constraints arising
-from the base model license (microsoft/phi-2) and third-party components. When publishing or redistributing
-adapter binary files, do one of the following:
-
-  A) Publish adapter weights on Hugging Face Model Hub and set the repository license explicitly there.
-  B) If distributing weights in this repository, ensure they are covered by Git LFS and include a clear
-     model card and an `adapter_metadata.json` describing provenance, dataset used, and license choices.
-
-Recommended model license text to display in the model card: "Adapter weights provided by Abdul Rafay (2025).
-Check base model (microsoft/phi-2) license before reuse. Use at your own risk; no warranty."
-
-4) Attribution & citation
--------------------------
-Please cite this work when used in research or publication:
-
-@software{pqcguard2025,
-  title     = {PQC-Guard: Fine-Tuning Phi-2 for Post-Quantum Cryptography Readiness},
-  author    = {Muhammad Masoom Alam and Abdul Rafay},
-  year      = {2025},
-  url       = {https://github.com/abdulrafayishaCkER/pqc-guard}
-}
-
-5) Notes & contact
--------------------
-If you need an alternate license (Apache-2.0 for patent grant, GPLv3 for copyleft), contact the author.
-For questions about licensing, provenance, or permission to use proprietary components, email: [author contact in repo].
-
-END OF FILE
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
