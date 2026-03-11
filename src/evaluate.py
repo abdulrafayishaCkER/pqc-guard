@@ -19,6 +19,7 @@ Usage:
 from __future__ import annotations
 import argparse
 import os
+import re
 import sys
 import subprocess
 import json
@@ -99,10 +100,8 @@ def clean_text(raw: Optional[str], prompt: str) -> str:
         t = t.replace(prompt, " ")
     for tok in (SYSTEM_TAG, USER_TAG, ASSISTANT_TAG, "<|endoftext|>", "<s>", "</s>"):
         t = t.replace(tok, " ")
-    import re
     t = re.sub(r"<\|[^>]*\|>", " ", t)
     t = re.sub(r"\n\s+\n", "\n\n", t)
-    t = re.sub(r"[ \t]{2,}", " ", t)
     lines = [ln.rstrip() for ln in t.splitlines()]
     cleaned = []
     prev = None
@@ -151,7 +150,6 @@ def pick_largest_checkpoint(base_dir: str) -> List[str]:
     subdirs = [d for d in sorted(os.listdir(base_dir)) if os.path.isdir(os.path.join(base_dir, d))]
     if not subdirs:
         return [base_dir]
-    import re
     numeric_dirs = [d for d in subdirs if re.fullmatch(r'\d+', d)]
     if numeric_dirs:
         chosen = max(numeric_dirs, key=lambda x: int(x))

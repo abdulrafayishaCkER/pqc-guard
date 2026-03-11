@@ -1,3 +1,6 @@
-The checkpoints were around 3.4GB so instead of uploading it here we uploaded it to Hugging Face.
-Hugging face: https://huggingface.co/rafayishaCked/pqc_guard
+# Checkpoints
+
+The checkpoints are approximately 3.4 GB and are hosted on Hugging Face instead of this repository.
+
+🤗 **Hugging Face:** [rafayishaCked/pqc_guard](https://huggingface.co/rafayishaCked/pqc_guard)
 
