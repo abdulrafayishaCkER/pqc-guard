@@ -24,7 +24,7 @@ import math
 import random
 from collections import Counter
 from dataclasses import dataclass
-from typing import List, Dict, Optional
+from typing import Any, List, Dict, Optional
 
 # ------------------ VERY EARLY ENV (must come before tokenizers/transformers imports) ------------------
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -333,9 +333,10 @@ def main():
     # ------------------ collator (no worker forks) ------------------
     @dataclass
     class LMDataCollator:
-        tokenizer: any
+        tokenizer: Any
 
         def __call__(self, feats: List[Dict]):
+            # Import locally to avoid pickle/fork issues in multiprocessing workers
             import torch as _torch
 
             pad_id = self.tokenizer.pad_token_id

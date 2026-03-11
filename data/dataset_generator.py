@@ -30,12 +30,16 @@ Defaults
 - LANG: en
 """
 from __future__ import annotations
-import random, itertools, re, math, csv, json, hashlib
+import csv
+import hashlib
+import itertools
+import json
+import math
+import random
+import re
+import sys
 from collections import defaultdict
-import json, random, re, sys, hashlib, itertools, math, csv
 from pathlib import Path
-# ---------------- Prompt-variant helpers: synonyms, aliases, connector styles ----------------
-import re, random
 
 # interchangeable “quantum-safe” wordings
 _QSAFE_CANON = "quantum-safe"
